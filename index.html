@@ -19,9 +19,19 @@
                local('Merriweather'),
                local('Merriweather-regular'),
                url('./fonts/Merriweather-Regular.ttf') format('truetype')
-            }
+        }
 
-            @font-face {
+       @font-face {
+            font-family: 'Lobster';
+            font-weight: 400;
+            font-style: normal;
+            src: 
+               local('Lobster'),
+               local('Lobster-regular'),
+               url('./fonts/Lobster-Regular.ttf') format('truetype')
+        }
+
+        @font-face {
             font-family: 'Merriweather';
             font-weight: 400;
             font-style: italic;
@@ -29,40 +39,42 @@
                local('Merriweather Italic'),
                local('Merriweather-italic'),
                url('./fonts/Merriweather-Italic.ttf') format('truetype')
-            }
+        }
+        body {
+            margin: 20px auto;
+            max-width: 650px;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+            padding: 0 10px;
+            overflow-y: scroll;
+            padding: 0 15px 160px 15px;
+            font-family: 'Merriweather', Helvetica, sans-serif;
+        }
+        a {
+            color: #2266f1;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #c26;
+            text-decoration: none;
+        }
+        @media screen and (max-device-width: 667px){
             body {
-                margin: 20px auto;
-                max-width: 650px;
-                line-height: 1.8;
-                font-size: 16px;
-                color: #333;
-                padding: 0 10px;
-                overflow-y: scroll;
-                padding: 0 15px 160px 15px;
-                font-family: 'Merriweather', Helvetica, sans-serif;
+                padding: 0 15px 0 15px;
             }
-            a {
-                color: #2266f1;
-                text-decoration: none;
-            }
-            a:hover {
-                color: #c26;
-                text-decoration: none;
-            }
-            @media screen and (max-device-width: 667px){
-                body {
-                    padding: 0 15px 0 15px;
-                }
-            }
-            h1 {
-                margin-top: 30px;
-            }
-            h2 {
-                font-size: 21px;
-                font-weight: normal;
-                font-family: Helvetica, sans-serif;
-            }
-        </style>
+        }
+        h1 {
+            margin-top: 30px;
+            font-family: 'Lobster';
+            font-size: 55px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            font-family:  'Helvetica', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -91,23 +103,24 @@
       js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-     <img src="images/logo.png" style="width: 150px; float: left; padding-right: 20px">
-     <h1 style="padding-top: 34px; margin-bottom: 40px; line-height: 45px">Uppsala Autonoma Studentförening</h1>
+     <img src="images/logo.png?v=2.0" style="width: 150px; float: left; padding-right: 20px">
+     <h1 style="padding-top: 10px; margin-bottom: 50px; line-height: 65px">Uppsala Autonoma Studentförening</h1>
 
     <p>
         Uppsala Autonoma Studentförening är ett utomparlamentariskt nätverk av studenter i Uppsala som sysslar med politisk fortbildning, direkt aktion och socialt umgänge.
     </p>
 
     <p>
-        Vill du engagera dig? Skicka e-post till <a href="mailto:info@autonomastudenter.se">kontakt@autonomastudenter.se</a>
+        Vill du engagera dig? Skicka e-post till <a href="mailto:info@autonomastudenter.se">info@autonomastudenter.se</a>
     </p>
 
-    <div style="margin-top: 10px; float: left; margin-right: 10px">
-        <a class="twitter-timeline" data-lang="sv" data-height="564" data-width="300" data-dnt="true" data-theme="light" data-link-color="#2266f1" href="https://twitter.com/AutonomaStudent?ref_src=twsrc%5Etfw">Tweets by AutonomaStudent</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div style="float: left; margin-right: 10px; margin-top: 20px">
+        <h2 style="margin-bottom: 5px">Twitter: <a href="https://twitter.com/AutonomaStudent">@AutonomaStudent</a></h2>
+        <a class="twitter-timeline" data-show-replies="false" data-lang="sv" data-height="500" data-width="300" data-dnt="true" data-chrome="noheader nofooter" data-theme="light" data-link-color="#2266f1" href="https://twitter.com/AutonomaStudent">Tweets by AutonomaStudent</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
 
-    <div style="float: left; width: 300px">
-        <h2 style="margin: 13px 0 4px 0">Facebook</h2>
+    <div style="float: left; width: 300px; margin-top: 20px">
+        <h2 style="margin-bottom: 5px">Facebook: <a href="https://www.facebook.com/AutonomaStudent">AutonomaStudent</a></h2>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAutonomaStudent&tabs=events,timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </div>
 </body>
