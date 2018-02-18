@@ -29,13 +29,13 @@
 }
 
 body {
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 650px;
     line-height: 1.8;
     font-size: 16px;
     color: #333;
     overflow-y: scroll;
-    padding: 0 15px 160px 15px;
+    padding: 30px 15px 160px 15px;
     font-family: 'Merriweather', Helvetica, sans-serif;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 
 @media screen and (max-device-width: 667px){
     body {
-        padding: 0 15px 0 15px;
+        padding: 15px 15px 0 15px;
     }
 }
 
@@ -69,6 +69,7 @@ h3 {
     font-family:  'Helvetica', sans-serif;
 }
 
+
 #logo img {
     width: 150px;
     float: left;
@@ -79,7 +80,7 @@ h3 {
     font-family: 'Lobster', 'Helvetica', sans-serif;
     font-size: 55px;
     line-height: 65px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 50px;
     padding-top: 10px;
 }
