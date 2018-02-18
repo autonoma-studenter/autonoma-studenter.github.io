@@ -106,4 +106,12 @@ h3 {
     margin-top: 20px;
 }
 
+ul, ol {
+    padding-left: 40px;
+}
+
+ul li, ol li {
+    margin-bottom: 3px;
+}
+
 
