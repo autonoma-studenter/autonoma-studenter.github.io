@@ -10,119 +10,51 @@
     <meta name="viewport" content="width=670">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <style>
-        @font-face {
-            font-family: 'Merriweather';
-            font-weight: 400;
-            font-style: normal;
-            src: 
-               local('Merriweather'),
-               local('Merriweather-regular'),
-               url('./fonts/Merriweather-Regular.ttf') format('truetype')
-        }
-
-       @font-face {
-            font-family: 'Lobster';
-            font-weight: 400;
-            font-style: normal;
-            src: 
-               local('Lobster'),
-               local('Lobster-regular'),
-               url('./fonts/Lobster-Regular.ttf') format('truetype')
-        }
-
-        @font-face {
-            font-family: 'Merriweather';
-            font-weight: 400;
-            font-style: italic;
-            src: 
-               local('Merriweather Italic'),
-               local('Merriweather-italic'),
-               url('./fonts/Merriweather-Italic.ttf') format('truetype')
-        }
-        body {
-            margin: 20px auto;
-            max-width: 650px;
-            line-height: 1.8;
-            font-size: 16px;
-            color: #333;
-            padding: 0 10px;
-            overflow-y: scroll;
-            padding: 0 15px 160px 15px;
-            font-family: 'Merriweather', Helvetica, sans-serif;
-        }
-        a {
-            color: #2266f1;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #c26;
-            text-decoration: none;
-        }
-        @media screen and (max-device-width: 667px){
-            body {
-                padding: 0 15px 0 15px;
-            }
-        }
-        h1 {
-            margin-top: 30px;
-            font-family: 'Lobster';
-            font-size: 55px;
-        }
-        h2 {
-            font-size: 18px;
-            font-weight: bold;
-            font-family:  'Helvetica', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css?v=1.0">
 </head>
 
 <body>
-    <script>window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));</script>
-
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-     <img src="images/logo.png?v=2.0" style="width: 150px; float: left; padding-right: 20px">
-     <h1 style="padding-top: 10px; margin-bottom: 50px; line-height: 65px">Uppsala Autonoma Studentförening</h1>
-
-    <p>
-        Uppsala Autonoma Studentförening är ett utomparlamentarisk och vänsterpolitisk förening av studenter i Uppsala som sysslar med fortbildning, direkt aktion och socialt umgänge.
-    </p>
-
-    <p>
-        Föreningen välkomnar de som vill bli eller redan är engagerade i olika former av utomparlamentarisk vänsterpolitik. Intresserad? Skicka e-post till <a href="mailto:info@autonomastudenter.se">info@autonomastudenter.se</a>
-    </p>
-
-    <div style="float: left; margin-right: 10px; margin-top: 20px">
-        <h2 style="margin-bottom: 5px">Twitter: <a href="https://twitter.com/AutonomaStudent">@AutonomaStudent</a></h2>
-        <a class="twitter-timeline" data-show-replies="false" data-lang="sv" data-height="500" data-width="300" data-dnt="true" data-chrome="noheader nofooter" data-theme="light" data-link-color="#2266f1" href="https://twitter.com/AutonomaStudent">Tweets by AutonomaStudent</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div id="logo">
+        <img src="images/logo.png?v=2.0">
+        <h1>Uppsala Autonoma Studentförening</h1>
     </div>
 
-    <div style="float: left; width: 300px; margin-top: 20px">
-        <h2 style="margin-bottom: 5px">Facebook: <a href="https://www.facebook.com/AutonomaStudent">AutonomaStudent</a></h2>
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAutonomaStudent&tabs=events,timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+    <p>
+        Uppsala Autonoma Studentförening är ett utomparlamentarisk och vänsterpolitisk förening av studenter i Uppsala som sysslar med fortbildning, direkt aktion och socialt umgänge. Vi välkomnar dig som vill bli eller redan är engagerad i olika former av utomparlamentarisk vänsterpolitik.
+    </p>
+
+    <h2>Aktuell kalender</h2>
+    <p>
+        <ul>
+            <li><strong>14/2</strong> - Pubkväll</li>
+            <li><strong>22/2</strong> - Filmkväll</li>
+            <li><strong>1/3</strong> - <a href="https://www.facebook.com/events/1985062735042037/">Studiecirkel #1 - A Civilians Guide to Direct Action</a></li>
+            <li><strong>5/3</strong> - Medlemsmöte</li>
+        </ul>
+    </p>
+
+    <h2>Engagera dig</h2>
+    <p>
+        Vill du delta i något av ovanstående? Vill du gå med i föreningen? Gör såhär:
+    </p>
+
+    <ol>
+        <li>Välj en av aktiviteterna ovan.</li>
+        <li>Maila oss på <a href="mailto:info@autonomastudenter.se">info@autonomastudenter.se</a> och berätta att du vill vara med.</li>
+        <li>Vi berättar var och när vi träffas, du dyker upp.</li>
+        <li>Du är nu med i föreningen, om du fortfarande vill. Vi har inga officiella medlemskap och ställer inga krav på att någon ska dyka upp på något.</li>
+    </ol>
+
+    <div id="social_media_tickers">
+        <div class="twitter">
+            <h3>Twitter: <a href="https://twitter.com/AutonomaStudent">@AutonomaStudent</a></h3>
+            <a class="twitter-timeline" data-show-replies="false" data-lang="sv" data-height="500" data-width="300" data-dnt="true" data-chrome="noheader nofooter" data-theme="light" data-link-color="#2266f1" href="https://twitter.com/AutonomaStudent">Tweets by AutonomaStudent</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="facebook">
+            <h3>Facebook: <a href="https://www.facebook.com/AutonomaStudent">AutonomaStudent</a></h3>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAutonomaStudent&tabs=events,timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
     </div>
 </body>
 </html>
